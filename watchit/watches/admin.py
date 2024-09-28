@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Watch, Price
 
-# Register your models here.
+admin.site.register(Watch)
+admin.site.register(Price)
