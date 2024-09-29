@@ -1,9 +1,9 @@
 from django.core.management.base import BaseCommand
-from watches.scraper.scraper import scrape_watches
+from watches.scraper.scraper import scrape_watch_prices
 
 class Command(BaseCommand):
-    help = 'Scrapes watch data from Amazon'
+    help = 'Scrapes watch price data from Amazon'
 
     def handle(self, *args, **kwargs):
-        scrape_watches()
+        scrape_watch_prices()
         self.stdout.write(self.style.SUCCESS('Successfully scraped watch prices.'))
