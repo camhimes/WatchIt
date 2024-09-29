@@ -399,3 +399,6 @@ FodyWeavers.xsd
 
 # Python
 .venv/
+
+# Database
+*.sqlite3
